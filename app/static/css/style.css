@@ -1,3 +1,31 @@
 body {
     font-family: Helvetica, "Helvetica Neue", sans-serif;
 }
+
+.purple {
+    color: mediumpurple;
+}
+
+.yellow {
+    color: yellow;
+}
+
+.makeBigger {
+    font-size: 150%;
+}
+
+.dark_mode {
+    background-color: black;
+}
+
+.main_margin {
+    margin: 10px;
+}
+
+.CenterGothic {
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+
+.times {
+    font-family: "Times New Roman", Times, serif;
+}
