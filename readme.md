@@ -1,9 +1,9 @@
-# Docker Nginx Flask Project Setup
+# Docker Nginx Flask Project
 
-Just Run:
+## Screenshots of Bootstrap Webpages
 
-docker compose up --build to get it to run and go to locahost to see the site.
+### Index Page in Z-layout
+![Index Page](screenshots/index_z-layout.png)
 
-## Screenshot of My First Webpage
-
-![Running Program](screenshots/my_first_webpage.png)
+### About Pages in F-layout
+![About Page](screenshots/about_f-layout.png)
