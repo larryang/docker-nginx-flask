@@ -16,12 +16,12 @@
     {% endblock %}
 </head>
 <body>
-<div id="container">
+<div class="container">
 
     <header>
-        <nav class="navbar navbar-light bg-light">
+        <nav class="navbar navbar-light bg-light nav-pills">
             <div class="container-fluid">
-                <span class="navbar-brand mb-0 h1">Navbar</span>
+                <span class="navbar-brand mb-0 h1">{{ name }}'s Website</span>
                 <ul class="nav justify-content-center">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="/">Home</a>
@@ -35,68 +35,51 @@
     </header>
 
     <h1><span class="times">{{ name }}'s Bootstrap Index Webpage</span></h1>
-
-    <h2>Intro</h2>
-    <p>My name is: {{ name }}</p>
-    <h2>Main Text</h2>
-    <p>
-        <span class="yellow CenterGothic makeBigger">L</span>orem ipsum dolor sit amet, consectetur adipiscing elit, sed
-        do eiusmod tempor incididunt ut labore et dolore magna
-        aliqua. Enim praesent elementum facilisis leo. Ornare massa eget egestas purus. Pharetra vel turpis nunc eget.
-        Urna
-        molestie at elementum eu. Nulla facilisi nullam vehicula ipsum. Eros in cursus turpis massa tincidunt. Feugiat
-        sed
-        lectus vestibulum mattis ullamcorper velit sed ullamcorper. Tortor at auctor urna nunc id. Erat nam at lectus
-        urna
-        duis convallis.
-    </p>
-    <p>
-        Eget arcu dictum varius duis at consectetur lorem. Risus viverra adipiscing at in tellus integer. Tincidunt
-        praesent
-        semper feugiat nibh sed. Elementum tempus egestas sed sed risus pretium quam. Id aliquet lectus proin nibh nisl
-        condimentum id. Auctor eu augue ut lectus arcu. Varius vel pharetra vel turpis nunc eget. Vel turpis nunc eget
-        lorem
-        dolor sed viverra ipsum. Ultricies tristique nulla aliquet enim tortor at. Euismod lacinia at quis risus sed
-        vulputate odio. Vel elit scelerisque mauris pellentesque. Nunc sed id semper risus in hendrerit gravida.
-    </p>
-    <p>
-        Volutpat maecenas volutpat blandit aliquam etiam erat velit scelerisque in. Vel eros donec ac odio tempor orci
-        dapibus ultrices in. Molestie nunc non blandit massa enim nec dui nunc mattis. Leo urna molestie at elementum eu
-        facilisis sed odio morbi. At tempor commodo ullamcorper a lacus vestibulum sed arcu non. Habitasse platea
-        dictumst
-        vestibulum rhoncus est pellentesque elit ullamcorper dignissim. Sodales neque sodales ut etiam. Et leo duis ut
-        diam
-        quam nulla porttitor. Cras sed felis eget velit aliquet sagittis id consectetur. Pharetra pharetra massa massa
-        ultricies mi quis hendrerit. Turpis egestas pretium aenean pharetra magna ac placerat. Sagittis nisl rhoncus
-        mattis
-        rhoncus urna. Leo in vitae turpis massa sed elementum tempus egestas. Accumsan sit amet nulla facilisi morbi
-        tempus.
-        Risus at ultrices mi tempus imperdiet nulla. Diam donec adipiscing tristique risus. Non nisi est sit amet
-        facilisis.
-        Tellus rutrum tellus pellentesque eu.
-    </p>
-    <p>
-        Ornare arcu dui vivamus arcu. Fermentum et sollicitudin ac orci phasellus. Sed risus pretium quam vulputate
-        dignissim suspendisse in. Odio pellentesque diam volutpat commodo sed egestas egestas fringilla. Curabitur vitae
-        nunc sed velit dignissim sodales ut eu. Curabitur gravida arcu ac tortor dignissim convallis aenean et tortor.
-        Tincidunt vitae semper quis lectus nulla at volutpat diam ut. Lacus laoreet non curabitur gravida arcu ac tortor
-        dignissim convallis. Faucibus ornare suspendisse sed nisi lacus sed. Adipiscing at in tellus integer feugiat
-        scelerisque. Nisl purus in mollis nunc sed id semper risus in. Sem viverra aliquet eget sit. Sit amet luctus
-        venenatis lectus. Sit amet nisl purus in mollis nunc sed id. Mauris augue neque gravida in fermentum et
-        sollicitudin
-        ac. Aliquam id diam maecenas ultricies mi eget mauris.
-    </p>
-    <p>
-        Justo donec enim diam vulputate ut pharetra sit. Id nibh tortor id aliquet lectus proin nibh nisl condimentum.
-        Augue
-        eget arcu dictum varius duis at consectetur lorem. Aliquet lectus proin nibh nisl condimentum id venenatis a.
-        Egestas integer eget aliquet nibh praesent tristique magna sit amet. Metus vulputate eu scelerisque felis
-        imperdiet
-        proin fermentum leo vel. Nunc faucibus a pellentesque sit amet porttitor eget dolor morbi. Egestas sed sed risus
-        pretium quam vulputate. Varius vel pharetra vel turpis nunc eget lorem dolor. Et sollicitudin ac orci phasellus
-        egestas. Congue eu consequat ac felis donec et odio pellentesque.
-    </p>
 </div>
+
+<div class="container">
+    <div class="row">
+        <img src="{{ url_for('static', filename='images/sample.jpeg') }}" class="img-fluid"
+             alt="sample main splash image"/>
+    </div>
+
+    <h2>Intro Text</h2>
+    <div class="row">
+        <div class="col">
+            <p>
+                <span class="purple CenterGothic makeBigger">L</span>orem ipsum dolor sit amet, consectetur adipiscing
+                elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim praesent elementum
+                facilisis leo. Ornare massa eget egestas purus. Pharetra vel turpis nunc eget. Urna
+                molestie at elementum eu. Nulla facilisi nullam vehicula ipsum. Eros in cursus turpis massa tincidunt.
+                Feugiat sed lectus vestibulum mattis ullamcorper velit sed ullamcorper. Tortor at auctor urna nunc id.
+                Erat nam at lectus urna duis convallis.
+            </p>
+        </div>
+        <div class="col"><p>
+            Eget arcu dictum varius duis at consectetur lorem. Risus viverra adipiscing at in tellus integer.
+            Tincidunt praesent
+            semper feugiat nibh sed. Elementum tempus egestas sed sed risus pretium quam. Id aliquet lectus
+            proin nibh nisl
+            condimentum id. Auctor eu augue ut lectus arcu. Varius vel pharetra vel turpis nunc eget. Vel turpis
+            nunc eget lorem
+            dolor sed viverra ipsum. Ultricies tristique nulla aliquet enim tortor at. Euismod lacinia at quis
+            risus sed
+            vulputate odio. Vel elit scelerisque mauris pellentesque. Nunc sed id semper risus in hendrerit
+            gravida.
+        </p></div>
+        <div class="col"><p>
+            Volutpat maecenas volutpat blandit aliquam etiam erat velit scelerisque in. Vel eros donec ac odio tempor
+            orci
+            dapibus ultrices in. Molestie nunc non blandit massa enim nec dui nunc mattis. Leo urna molestie at
+            elementum eu
+            facilisis sed odio morbi. At tempor commodo ullamcorper a lacus vestibulum sed arcu non. Habitasse platea
+            dictumst
+            vestibulum rhoncus est pellentesque elit ullamcorper dignissim. Sodales neque sodales ut etiam. Et leo duis
+            ut
+            diam
+            quam nulla porttitor. Cras sed felis eget velit aliquet sagittis id consectetur.
+        </p></div>
+    </div>
 
 <!-- Optional JavaScript; choose one of the two! -->
 
